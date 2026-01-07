@@ -398,4 +398,4 @@ $challengeResult = $conn->query("
 
     <?php include('../pages/footer.php'); ?>
 </body>
-</html>
+</html> 
