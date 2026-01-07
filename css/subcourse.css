@@ -1,0 +1,57 @@
+/* Khung tổng */
+.course-detail {
+    width: 80%;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+}
+
+/* Chia 2 cột */
+.course-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.course-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
+}
+
+.right-text h1 {
+    color: #9c00e5;
+}
+
+.right-text h2 {
+    margin: 0 0 15px;
+    font-size: 26px;
+    font-weight: 600;
+    color: #ff7c7c;
+}
+
+.right-text p {
+    color: #444;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Link toàn card */
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .course-grid {
+        grid-template-columns: 1fr;
+    }
+}

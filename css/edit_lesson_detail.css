@@ -1,0 +1,25 @@
+.media-preview {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.media-item {
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.btn-delete-media {
+    display: block;
+    margin-top: 6px;
+    color: red;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.btn-delete-media:hover {
+    text-decoration: underline;
+}

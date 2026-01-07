@@ -1,0 +1,95 @@
+/* ===== KHỐI LỆNH SỬ DỤNG ===== */
+.blocks-options {
+    display: flex;
+    gap: 15px;
+}
+
+.block-item {
+    padding: 10px 16px;
+    border-radius: 12px;
+    background: #fafafa;
+    border: 1.5px solid #ccc;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.25s;
+}
+
+.block-item input {
+    display: none;
+}
+
+.block-item span {
+    font-weight: 600;
+}
+
+.block-item:has(input:checked) {
+    border-color: #8b00ff;
+    background: #e8c6ff;
+    box-shadow: 0 0 10px rgba(139, 0, 255, 0.25);
+}
+
+.block-item input:checked + span {
+    color: #8b00ff;
+}
+
+/* ===== KHỐI LỆNH SỬ DỤNG ===== */
+.blocks-options {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap; /* nếu nhiều checkbox xuống dòng */
+}
+
+.block-item {
+    padding: 10px 16px;
+    border-radius: 12px;
+    background: #fafafa;
+    border: 1.5px solid #ccc;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.25s;
+}
+
+.block-item input {
+    display: none;
+}
+
+.block-item span {
+    font-weight: 600;
+}
+
+.block-item:has(input:checked) {
+    border-color: #443fff;
+    background: #e5caf2;
+    box-shadow: 0 0 10px rgba(68, 63, 255, 0.25);
+}
+
+.block-item input:checked + span {
+    color: #443fff;
+}
+
+/* ===== NÚT HÀNH ĐỘNG TRONG BẢNG ===== */
+.user-table .action-buttons a {
+    display: inline-block;
+    margin-right: 10px; /* khoảng cách giữa Edit & Delete */
+    margin-bottom: 4px;
+}
+
+/* ===== NÚT QUAY LẠI ===== */
+.btn-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 15px;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #555;
+    background: #f4f6f8;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}

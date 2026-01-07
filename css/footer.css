@@ -1,0 +1,45 @@
+/* FOOTER */
+footer {
+    margin-top: auto; 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 50px; /* Cân đối padding */
+    background-color: #9c00e5;
+    border-top: 1px solid #eee;
+    flex-shrink: 0;
+}
+
+footer a {
+    text-decoration: none; 
+    color: white; 
+}
+
+footer p {
+    color: white;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.footer-section h2 {
+    margin-top: 0;  
+    color: #FF9800;
+}
+
+footer i {
+    padding: 3px 8px;
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+}
+.card-link:hover .course-card {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+}

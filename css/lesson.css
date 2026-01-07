@@ -1,0 +1,59 @@
+html,
+body {
+    height: 100%;
+}
+
+body.course-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Khối nội dung chính sẽ giãn ra */
+.lesson-detail-wrapper {
+    flex: 1;
+}
+
+/* ====== KHUNG CHỨA ====== */
+.lesson-detail-wrapper {
+    width: 80%;
+    margin: 40px auto;
+}
+
+/* ====== GRID 4 Ô ====== */
+.lesson-detail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* ====== CARD ====== */
+.lesson-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 30px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.lesson-card h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.lesson-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* ====== HOVER ====== */
+.lesson-card:hover {
+    transform: translateY(-6px);
+    border-color: #443fff;
+    box-shadow: 0 10px 26px rgba(68, 63, 255, 0.25);
+}

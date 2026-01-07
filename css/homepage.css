@@ -1,0 +1,165 @@
+.slider {
+    width: 100%;
+    max-width: 1000px;
+    height: 450px;
+    margin: 40px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.3);
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.active {
+    opacity: 1;
+}
+
+.slider-text {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-40%, -50%);
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.45);
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.slider-text img {
+    width: 300px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.course-section {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.course-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* GRID 2 CỘT */
+.course-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 10px;
+}
+
+/* CARD KHÓA HỌC */
+.course-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* HIỆU ỨNG HOVER */
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* ẢNH */
+.course-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* NỘI DUNG */
+.course-content {
+    padding: 15px 20px;
+    text-align: left;
+}
+
+.course-content h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #9c00e5;
+}
+
+.course-content p {
+    color: #444;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+/* NÚT */
+.course-btn {
+    display: inline-block;
+    padding: 8px 14px;
+    background: #ff7b00;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.25s;
+}
+
+.course-btn:hover {
+    background: #e06900;
+}
+
+.course-intro {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.intro-box {
+    background: white;
+    border-radius: 12px;
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transition: 0.3s ease;
+}
+
+.intro-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
+}
+
+.intro-box i {
+    font-size: 45px;
+    color: #9c00e5;
+    margin-bottom: 15px;
+}
+
+.intro-box h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.intro-box p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.5;
+}

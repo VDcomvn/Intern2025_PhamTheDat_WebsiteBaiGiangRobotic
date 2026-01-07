@@ -1,0 +1,175 @@
+:root {
+    --primary-color: #9c00e5; /* Tím */
+    --accent-color: #FFec4a; /* Vàng cam */
+    --background-color: #e5caf2;
+    --text-color: #333;
+    --shadow-light: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--text-color);
+}
+
+.container {
+    display: flex;
+    max-width: 900px;
+    width: 90%;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-light);
+}
+
+/* Khu vực Logo (Trái) */
+.logo-area {
+    flex: 1;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.logo {
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.logo-area h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+    color: var(--accent-color);
+}
+
+.logo-area p {
+    font-size: 1em;
+    opacity: 0.9;
+}
+
+/* Khu vực Form (Phải) */
+.form-container {
+    flex: 1.2;
+    padding: 40px;
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    flex: 1;
+    padding: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: var(--text-color);
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.tab-button.active {
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.form-content {
+    display: none;
+}
+
+.form-content.active {
+    display: block;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+    font-size: 1.8em;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+}
+
+.input-group input:focus {
+    border-color: var(--accent-color);
+    outline: none;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #FF862d; /* Màu vàng cam đậm hơn */
+}
+
+.forgot-password {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .logo-area {
+        padding: 30px 20px;
+        border-radius: 12px 12px 0 0;
+    }
+
+    .form-container {
+        padding: 30px 20px;
+    }
+}
